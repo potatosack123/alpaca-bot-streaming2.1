@@ -1,0 +1,55 @@
+{
+  "symbols": "AAPL,MSFT, TSLA",
+  "timeframe": "1m",
+  "lunch_skip": false,
+  "risk_percent": 7.0,
+  "stop_loss_percent": 0.5,
+  "take_profit_percent": 1.0,
+  "selected_strategy": "GapAndGo",
+  "force_mode": "auto",
+  "extra_strategy_paths": [],
+  "backtest_years": 2,
+  "backtest_source": "alpaca",
+  "data_feed": "IEX",
+  "strategy_slots": [
+    {
+      "enabled": true,
+      "name": "GapAndGo",
+      "priority": 1,
+      "start_hhmm": "09:30",
+      "end_hhmm": "16:00",
+      "timeframe": "1m",
+      "lunch_skip": false,
+      "use_global": false,
+      "risk_percent": 7.0,
+      "sl_percent": 0.5,
+      "tp_percent": 1.0
+    },
+    {
+      "enabled": true,
+      "name": "ORB",
+      "priority": 1,
+      "start_hhmm": "09:30",
+      "end_hhmm": "16:00",
+      "timeframe": "5m",
+      "lunch_skip": false,
+      "use_global": false,
+      "risk_percent": 7.0,
+      "sl_percent": 0.5,
+      "tp_percent": 1.0
+    },
+    {
+      "enabled": true,
+      "name": "BaselineSMA",
+      "priority": 1,
+      "start_hhmm": "09:30",
+      "end_hhmm": "16:00",
+      "timeframe": "1m",
+      "lunch_skip": false,
+      "use_global": false,
+      "risk_percent": 1.0,
+      "sl_percent": 1.0,
+      "tp_percent": 2.0
+    }
+  ]
+}
